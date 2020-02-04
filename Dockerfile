@@ -8,4 +8,4 @@ RUN apt-get update && apt-get -y install curl lsb-release \
 
 COPY entrypoint /usr/local/bin/entrypoint
 RUN chmod +x /usr/local/bin/entrypoint
-ENTRYPOINT ["/usr/local/entrypoint"]
+ENTRYPOINT ["/usr/local/bin/entrypoint"]
